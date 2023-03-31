@@ -15,20 +15,19 @@ const eqArrays = function(arr1, arr2) {
   if (arr1.length !== arr2.length) {
     return false;
   } else {
-    let result = false;
+    
 
     // comparing each element of array
     for (let i = 0; i < arr1.length; i++) {
-
       if (arr1[i] !== arr2[i]) {
         return false;
-      } else {
-        result = true;
       }
     }
-    return result;
+    return true;
   }
 };
 
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // => should PASS
+assertEqual(eqArrays([1, 2, 4], [1, 2, 3]), false); // => should PASS
+
 
