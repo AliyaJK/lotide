@@ -1,6 +1,3 @@
-const assertArraysEqual = require('./assertArraysEqual');
-const eqArrays = require('./eqArrays');
-
 // implement middle which will take in an array
 // return the middle-most element
 // if array has 1 or 2 elements, return empty array
